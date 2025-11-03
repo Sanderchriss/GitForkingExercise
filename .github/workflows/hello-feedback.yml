@@ -1,0 +1,11 @@
+name: Hello Feedback
+on:
+  push:
+    paths:
+      - 'hello.txt'
+jobs:
+  feedback:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Celebrate success
+        run: echo "✅ Success! You pushed hello.txt to your fork."
